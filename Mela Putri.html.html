@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mela Putri | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:
+linear-gradient(
+135deg,
+#0F172A,
+#111827,
+#1E1B4B
+);
+color:#F8FAFC;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(15,23,42,.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#38BDF8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#38BDF8;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:100px 10%;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:65px;
+font-weight:800;
+line-height:1.1;
+}
+
+.hero-text span{
+color:#38BDF8;
+}
+
+.hero-text p{
+margin-top:20px;
+font-size:18px;
+color:#CBD5E1;
+max-width:600px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:
+linear-gradient(
+90deg,
+#38BDF8,
+#8B5CF6
+);
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:
+0 0 25px #38BDF8,
+0 0 50px #8B5CF6;
+}
+
+.hero-img img{
+width:320px;
+height:320px;
+object-fit:cover;
+border-radius:50%;
+
+border:5px solid #38BDF8;
+
+box-shadow:
+0 0 20px #38BDF8,
+0 0 40px #38BDF8,
+0 0 80px #38BDF8;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#38BDF8;
+}
+
+/* CARD */
+
+.card{
+background:rgba(30,41,59,.8);
+backdrop-filter:blur(10px);
+border:1px solid rgba(56,189,248,.2);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(56,189,248,.3);
+}
+
+/* BIODATA */
+
+.bio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+/* SKILL */
+
+.skill{
+margin-bottom:25px;
+}
+
+.skill-name{
+margin-bottom:8px;
+}
+
+.bar{
+background:#334155;
+border-radius:50px;
+overflow:hidden;
+}
+
+.progress{
+height:18px;
+border-radius:50px;
+
+background:
+linear-gradient(
+90deg,
+#38BDF8,
+#8B5CF6
+);
+}
+
+/* TIMELINE */
+
+.timeline{
+border-left:3px solid #38BDF8;
+padding-left:25px;
+}
+
+.timeline-item{
+margin-bottom:35px;
+}
+
+.timeline-item h3{
+color:#38BDF8;
+}
+
+/* SOCIAL */
+
+.social{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.social a{
+padding:12px 25px;
+background:
+linear-gradient(
+90deg,
+#38BDF8,
+#8B5CF6
+);
+
+border-radius:10px;
+
+text-decoration:none;
+color:white;
+
+transition:.3s;
+}
+
+.social a:hover{
+transform:scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+padding:30px;
+text-align:center;
+background:#020617;
+color:#94A3B8;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">MP.</div>
+
+<ul>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#bio">Biodata</a></li>
+<li><a href="#skill">Skill</a></li>
+<li><a href="#edu">Pendidikan</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-text">
+
+<h1>Hallo, I'm <span>Mela Aulandari Putri</span></h1>
+
+<p>
+Mahasiswa Politeknik LP3I yang memiliki minat
+di bidang Akuntansi, website, Exel, Dan Word
+Saya juga suka healing dan memasak
+</p>
+
+<a href="#about" class="btn">
+Lihat Portfolio
+</a>
+
+</div>
+
+<div class="hero-img">
+<img src="foto.jpg" alt="Foto Profil">
+</div>
+
+</header>
+
+<section id="about">
+
+<h2 class="title">Tentang Saya</h2>
+
+<div class="card">
+
+<p>
+Saya merupakan mahasiswa yang terus mengembangkan
+kemampuan dalam bidang teknologi dan akuntansi.
+Fokus saya saat ini adalah pengolahan data,
+pembuatan database, Excel,
+serta pengembangan website menggunakan HTML dan CSS.
+Saya percaya bahwa teknologi dapat membantu
+menyelesaikan berbagai permasalahan secara efektif.
+</p>
+
+</div>
+
+</section>
+
+<section id="bio">
+
+<h2 class="title">Biodata</h2>
+
+<div class="bio-grid">
+
+<div class="card">
+<h3>Informasi Pribadi</h3>
+<br>
+<p>Nama : Mela Aulandari Putri</p>
+<p>Alamat : Padang</p>
+<p>Email : melap9191@gmail.com</p>
+<p>Status : Mahasiswa</p>
+</div>
+
+<div class="card">
+<h3>Minat</h3>
+<br>
+<p>✓ Akuntansi</p>
+<p>✓ Exel</p>
+<p>✓ Web Development</p>
+<p>✓ Word</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skill">
+
+<h2 class="title">Skills</h2>
+
+<div class="skill">
+<div class="skill-name">HTML dan CSS</div>
+<div class="bar">
+<div class="progress" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Cooking</div>
+<div class="bar">
+<div class="progress" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Microsoft Excel</div>
+<div class="bar">
+<div class="progress" style="width:95%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">word</div>
+<div class="bar">
+<div class="progress" style="width:80%"></div>
+</div>
+</div>
+
+</section>
+
+<section id="edu">
+
+<h2 class="title">Riwayat Pendidikan</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>SD</h3>
+<p>SD Negeri 10 Pasar Muaralabuh</p>
+</div>
+
+<div class="timeline-item">
+<h3>SMP</h3>
+<p>SMP Negeri 01 Solok Selatan</p>
+</div>
+
+<div class="timeline-item">
+<h3>SMA</h3>
+<p>MAN 01 Solok Selatan</p>
+</div>
+
+<div class="timeline-item">
+<h3>Politeknik LP3I Padang</h3>
+<p>Program Studi Manajemen Informatika</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Kontak & Media Sosial</h2>
+
+<div class="social">
+
+<a href="https://www.instagram.com/">Instagram</a>
+<a href="https://web.whatsapp.com/">WhatsApp</a>
+<a href="https://www.tiktok.com/login">TikTok</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Mela Putri Portfolio | Designed with HTML & CSS</p>
+
+</footer>
+
+</body>
+</html>
